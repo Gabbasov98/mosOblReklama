@@ -39,7 +39,7 @@
         height: 100%;
         width: 100%;
         position: relative;
-        svg {
+        &>svg {
             position: absolute;
             left: 50%;
             top: 100%;
@@ -47,20 +47,17 @@
         }
     }
     &__digital {
+        display: block;
         position: absolute;
-        border-radius: 8px;
-        background-color: $blue2;
-        height: 17px;
-        display: flex;
-        align-items: center;
-        font-weight: 600;
-        font-size: 11px;
-        padding: 0 6px;
         z-index: 2;
-        bottom: 22px;
+        bottom: 23px;
         left: 50%;
         transform: translateX(-50%);
-        color: #fff;
+        width: 46px;
+        svg {
+            width: 100%;
+            height: auto;
+        }
     }
     &__detail {
         position: absolute;
@@ -147,19 +144,28 @@
             width: 59px;
         }
         &__wrap {
-            svg {
+            &>svg {
                 width: 4px;
                 height: auto;
             }
         }
         &__digital {
-            padding: 2px 4px;
-            height: unset;
-            font-size: 9px;
+            width: 35px;
             bottom: unset;
             top: 0;
-            display: block;
             transform: translate(-50%, -110%);
+        }
+        &__img {
+            width: 90px !important;
+            margin: 0 10px 5px 0;
+            float: left;
+        }
+        &__detail {
+            // text-align: center;
+            &-wrap {
+                display: block;
+                padding: 12px;
+            }
         }
     }
 }
@@ -177,24 +183,12 @@
             width: 52px;
         }
         &__wrap {
-            svg {
+            &>svg {
                 width: 3.8px;
             }
         }
         &__digital {
-            padding: 2px 3px;
-        }
-        &__detail {
-            // text-align: center;
-            &-wrap {
-                display: block;
-                padding: 12px;
-            }
-        }
-        &__img {
-            width: 90px;
-            margin: 0 10px 10px 0;
-            float: left;
+            // padding: 2px 3px;
         }
         &__title {
             font-size: 14px;

@@ -79,19 +79,6 @@
 @media screen and (max-width: 1439px) {
     @media screen and (min-width: 1279px) {
         .modal {
-            &__close {
-                right: unset;
-                top: unset;
-                left: 100%;
-                bottom: 100%;
-                margin-left: 5px;
-                g {
-                    opacity: .8;
-                }
-                path {
-                    stroke: #fff;
-                }
-            }
             &-dialog {
                 max-width: 370px;
                 padding: 40px 40px 35px;
@@ -166,6 +153,8 @@
             padding: 30px;
             width: 370px;
             max-width: calc(100% - 30px);
+            margin-left: auto;
+            margin-right: auto;
         }
         &__close {
             top: 10px;
