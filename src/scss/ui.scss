@@ -456,6 +456,9 @@ input {
         }
     }
     .breadcrums {
+        &__inner {
+            width: calc(100% + 15px);
+        }
         &__item {
             display: inline;
             // white-space: nowrap;

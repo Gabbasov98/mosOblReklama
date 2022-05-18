@@ -1157,6 +1157,7 @@
             position: relative;
         }
         &__item {
+            position: relative;
             transform: unset !important;
             &-inner {
                 padding: 25px;
@@ -1184,12 +1185,13 @@
             }
         }
         .adv-banner__detail {
+            padding-bottom: 0;
             max-width: unset;
             width: 430px;
             left: 0;
-            top: unset;
-            bottom: unset;
-            transform: translateY(-100%);
+            // top: unset;
+            // bottom: unset;
+            transform: translateY(0%);
         }
     }
     .adv {

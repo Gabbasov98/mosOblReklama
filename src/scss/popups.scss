@@ -8,9 +8,16 @@
 }
 
 .modal {
+    text-align: center;
+    &:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
     &.show {
         @media screen and (min-width: 768px) {
-            display: flex !important;
+            // display: flex !important;
             align-items: center;
             justify-content: center;
         }
@@ -21,6 +28,9 @@
         border-radius: 30px;
         padding: 50px 60px 60px;
         pointer-events: unset;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
     }
     &__close {
         background-color: transparent;

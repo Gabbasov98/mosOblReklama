@@ -476,21 +476,6 @@
             }
         }
     }
-}
-
-@media screen and (max-width: 1600px) {
-    .config-catalog {
-        &__title {
-            .rect1 {
-                margin-left: 20px;
-            }
-        }
-    }
-    .catalog {
-        &__th {
-            font-size: 16px;
-        }
-    }
     .catalog-row {
         &__img {
             width: 76px;
@@ -524,6 +509,21 @@
         &__side {
             width: 34px;
             height: 34px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .config-catalog {
+        &__title {
+            .rect1 {
+                margin-left: 20px;
+            }
+        }
+    }
+    .catalog {
+        &__th {
             font-size: 16px;
         }
     }
@@ -586,6 +586,19 @@
             font-size: 15px;
             height: 76px;
         }
+        td {
+            &:nth-child(3) {
+                padding-right: 0;
+                padding-left: 15px;
+            }
+            &:nth-child(4) {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            &:last-child {
+                padding-left: 8px;
+            }
+        }
     }
     .catalog-row {
         &__format,
@@ -593,12 +606,23 @@
         &__title {
             font-size: 14px;
         }
+        &__format {
+            max-width: 120px;
+            min-width: 120px;
+        }
         &__action {
             width: 197px;
         }
         &__price,
         &__favourite {
             height: 57px;
+        }
+        &__favourite {
+            width: 57px;
+        }
+        &__content {
+            max-width: 240px;
+            min-width: 240px;
         }
     }
     .adv-moscow {
@@ -658,6 +682,14 @@
         &__th {
             font-size: 14px;
         }
+        th {
+            &:nth-child(3) {
+                .catalog__th {
+                    padding-left: 17px;
+                    justify-content: flex-start;
+                }
+            }
+        }
         td {
             &:nth-child(1) {
                 padding-right: 7px;
@@ -705,6 +737,7 @@
         }
         &__format {
             min-width: 100px;
+            max-width: 100px;
             i {
                 margin-right: 10px;
                 width: 7px;
