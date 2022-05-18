@@ -28,7 +28,8 @@
         cursor: pointer;
         .adv-banner__detail {
             opacity: 1;
-            pointer-events: unset;
+            // pointer-events: unset;
+            // pointer-events: none;
         }
     }
     &:not(:last-child) {
@@ -46,7 +47,7 @@
         background-size: 100% 100%;
         opacity: 0;
         pointer-events: none;
-        transition: all .225s;
+        transition: all .425s;
         &-wrap {
             display: flex;
             padding: 20px 20px 20px 30px;
