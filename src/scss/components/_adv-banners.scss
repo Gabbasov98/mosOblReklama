@@ -2,19 +2,22 @@
 .adv-banners {
     margin-top: 24px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 
 .adv-banner {
-    height: 26px;
     width: 36px;
-    border: 2px solid $blue;
-    border-radius: 4px;
-    box-shadow: inset 0px 0.284448px 3.41338px rgba(0, 21, 34, 0.59);
-    font-weight: 600;
-    font-size: 11px;
     position: relative;
+    &>img {
+        width: 100%;
+    }
+    &--small {
+        width: 33.33px;
+    }
+    &--medium2 {
+        width: 46px;
+    }
     &--medium {
         width: 50px;
     }
@@ -29,35 +32,7 @@
         }
     }
     &:not(:last-child) {
-        margin-right: 20px;
-    }
-    &__wrap {
-        color: #FFFFFF;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-        position: relative;
-        &>svg {
-            position: absolute;
-            left: 50%;
-            top: 100%;
-            transform: translate(-50%, 1px);
-        }
-    }
-    &__digital {
-        display: block;
-        position: absolute;
-        z-index: 2;
-        bottom: 23px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 46px;
-        svg {
-            width: 100%;
-            height: auto;
-        }
+        margin-right: 12px;
     }
     &__detail {
         position: absolute;
@@ -131,11 +106,15 @@
 
 @media screen and (max-width: 767px) {
     .adv-banner {
-        height: 17px;
         width: 27px;
-        font-size: 9px;
         &:not(:last-child) {
             margin-right: 8px;
+        }
+        &--small {
+            width: 25.33px;
+        }
+        &--medium2 {
+            width: 35px;
         }
         &--medium {
             width: 38px;
@@ -143,25 +122,12 @@
         &--large {
             width: 59px;
         }
-        &__wrap {
-            &>svg {
-                width: 4px;
-                height: auto;
-            }
-        }
-        &__digital {
-            width: 35px;
-            bottom: unset;
-            top: 0;
-            transform: translate(-50%, -110%);
-        }
         &__img {
             width: 90px !important;
             margin: 0 10px 5px 0;
             float: left;
         }
         &__detail {
-            // text-align: center;
             &-wrap {
                 display: block;
                 padding: 12px;
@@ -172,24 +138,19 @@
 
 @media screen and (max-width: 374px) {
     .adv-banner {
-        height: 17px;
-        width: 28px;
-        font-size: 9px;
-        flex-grow: 1;
-        &--medium {
-            width: 35px;
+        // width: 22px;
+        &:not(:last-child) {
+            margin-right: 5px;
         }
-        &--large {
-            width: 52px;
-        }
-        &__wrap {
-            &>svg {
-                width: 3.8px;
-            }
-        }
-        &__digital {
-            // padding: 2px 3px;
-        }
+        // &--medium2 {
+        //     width: 33px;
+        // }
+        // &--medium {
+        //     width: 33px;
+        // }
+        // &--large {
+        //     width: 50px;
+        // }
         &__title {
             font-size: 14px;
         }
