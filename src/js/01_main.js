@@ -56,7 +56,10 @@ $(document).ready(function() {
             return
         }
         $(".header__burger").addClass("header__burger--active")
-        $("body").append(`<div class="header-bg"></div> `)
+
+        if (window.innerWidth > 767) {
+            $("body").append(`<div class="header-bg"></div> `)
+        }
         $("body").addClass("fixed-body")
         $(".header__mob").addClass("header__mob--active")
 

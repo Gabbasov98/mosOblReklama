@@ -735,6 +735,7 @@
         &-bg {
             background: $blue;
             opacity: 1;
+            display: none !important;
         }
         &__inner {
             justify-content: flex-end;

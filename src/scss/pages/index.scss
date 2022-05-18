@@ -276,7 +276,7 @@
                 width: 148px;
             }
         }
-        @media screen and (min-width: 992px) {
+        @media screen and (min-width: 767px) {
             &:nth-child(3n - 2) {
                 .adv-banner__detail {
                     left: 0;
@@ -1158,9 +1158,6 @@
         }
         &__item {
             transform: unset !important;
-            @media screen and (min-width: 767px) {
-                position: static;
-            }
             &-inner {
                 padding: 25px;
             }
@@ -1187,7 +1184,8 @@
             }
         }
         .adv-banner__detail {
-            width: 100%;
+            max-width: unset;
+            width: 430px;
             left: 0;
             top: unset;
             bottom: unset;
@@ -1402,6 +1400,9 @@
             }
             &--row {
                 grid-column: 1/2;
+            }
+            .adv-banner__detail {
+                max-width: 100%;
             }
         }
     }

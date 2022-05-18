@@ -457,6 +457,7 @@ input {
     }
     .breadcrums {
         &__item {
+            display: inline;
             // white-space: nowrap;
             font-size: 13px;
             &:before {
