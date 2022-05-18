@@ -153,11 +153,12 @@
             }
         }
         &__digital {
-            padding: 0 4px;
-            height: 13px;
+            padding: 2px 4px;
+            height: unset;
             font-size: 9px;
             bottom: unset;
             top: 0;
+            display: block;
             transform: translate(-50%, -110%);
         }
     }
@@ -181,7 +182,7 @@
             }
         }
         &__digital {
-            padding: 0 3px;
+            padding: 2px 3px;
         }
         &__detail {
             // text-align: center;

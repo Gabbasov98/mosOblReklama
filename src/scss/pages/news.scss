@@ -451,7 +451,7 @@
             overflow-y: auto;
             padding-right: 15px;
             max-height: 355px;
-            @include scroll2;
+            @include scroll;
         }
         &__group {
             &--hidden {

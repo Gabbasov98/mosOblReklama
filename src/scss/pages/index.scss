@@ -589,7 +589,7 @@
         justify-content: center;
         padding: 33px;
         &:hover {
-            z-index: 2;
+            // z-index: 2;
             cursor: pointer;
             .companies__item-info {
                 opacity: 1;
@@ -1749,8 +1749,10 @@
                 left: 0;
             }
             &:nth-child(3n - 1) {
-                left: 50%;
-                transform: translateX(-50%);
+                .companies__item-info {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
             }
             &:nth-child(3n) {
                 .companies__item-info {

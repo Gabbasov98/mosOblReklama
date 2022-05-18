@@ -455,26 +455,6 @@ input {
         }
     }
     .breadcrums {
-        &__inner {
-            // display: flex;
-            // align-items: center;
-            // overflow-x: hidden;
-            // width: calc(100% + 15px);
-            position: relative;
-            &:after {
-                content: '';
-                position: absolute;
-                z-index: 1;
-                background: linear-gradient(270deg, #FFFFFF 17.53%, rgba(255, 255, 255, 0) 82.47%);
-                width: 77px;
-                height: 100%;
-                right: 0;
-                top: 0;
-            }
-            &::-webkit-scrollbar {
-                width: 0;
-            }
-        }
         &__item {
             // white-space: nowrap;
             font-size: 13px;

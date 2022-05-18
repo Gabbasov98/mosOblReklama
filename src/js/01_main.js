@@ -14,11 +14,11 @@ function projectsSliders() {
 
 $(document).ready(function() {
     $('input[type="tel"]').mask('+7 999 999-9999', { placeholder: '+7             ' });
-    $(".custom-scroll").mCustomScrollbar()
+    // $(".custom-scroll").mCustomScrollbar()
 
     if (window.innerWidth < 767) {
-        $(".config-filter__scroll").mCustomScrollbar()
-        $(".news-nav__scroll").mCustomScrollbar()
+        // $(".config-filter__scroll").mCustomScrollbar()
+        // $(".news-nav__scroll").mCustomScrollbar()
     }
 
     $(".nav__item").hover(onIn, onOut);

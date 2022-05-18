@@ -29,6 +29,7 @@ body {
     -ms-backface-visibility: hidden;
     &.fixed-body {
         overflow-y: hidden;
+        height: 100vh;
     }
 }
 
@@ -69,5 +70,5 @@ a {
 }
 
 .custom-scroll {
-    @include scroll2;
+    @include scroll;
 }
