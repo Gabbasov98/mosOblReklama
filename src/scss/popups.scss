@@ -9,9 +9,11 @@
 
 .modal {
     &.show {
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
+        @media screen and (min-width: 768px) {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
     }
     &-dialog {
         max-width: 470px;
