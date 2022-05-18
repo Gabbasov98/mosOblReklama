@@ -59,6 +59,8 @@ $(document).ready(function() {
 
         if (window.innerWidth > 767) {
             $("body").append(`<div class="header-bg"></div> `)
+        } else {
+            $(".header").addClass("header--fixed")
         }
         $("body").addClass("fixed-body")
         $(".header__mob").addClass("header__mob--active")
@@ -73,6 +75,7 @@ $(document).ready(function() {
         $(".header__mob").removeClass("header__mob--active")
         $(".header__burger").removeClass("header__burger--active")
         $("body").removeClass("fixed-body")
+        $(".header").removeClass("header--fixed")
     }
 
     $(".copy-btn").click(function() {
