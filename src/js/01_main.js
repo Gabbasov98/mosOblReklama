@@ -1,25 +1,5 @@
-let portfolioSlidersArray = []
-
-function projectsSliders() {
-    $(".projects__slider").each(function(index, el) {
-        $(el).attr("data-slider-id", `${index}`)
-        portfolioSlidersArray[index] = new Swiper(`.projects__slider[data-slider-id="${index}"] .swiper-container`, {
-            slidesPerView: "auto",
-            spaceBetween: 10,
-        })
-    })
-}
-
-
-
 $(document).ready(function() {
     $('input[type="tel"]').mask('+7 999 999-9999', { placeholder: '+7             ' });
-    // $(".custom-scroll").mCustomScrollbar()
-
-    if (window.innerWidth < 767) {
-        // $(".config-filter__scroll").mCustomScrollbar()
-        // $(".news-nav__scroll").mCustomScrollbar()
-    }
 
     $(".nav__item").hover(onIn, onOut);
     $(".nav__item-show").click(function() {
@@ -46,8 +26,6 @@ $(document).ready(function() {
             $(this).removeClass("nav__item--active")
         }
     }
-
-
 
 
     $(".header__burger").click(function() {
@@ -103,10 +81,6 @@ $(document).ready(function() {
 
 
     })
-
-
-
-
 
 
 
